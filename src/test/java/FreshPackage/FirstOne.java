@@ -1,13 +1,23 @@
 package FreshPackage;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
 public class FirstOne {
 
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-		System.out.println("Trying my best Plz GOD help me");
-
-		for(int i=0; i<=10; i++){
-			System.out.println(i);
+	@Test
+	public static void Test1() {
+		
+			
+			WebDriver  driver = new FirefoxDriver();
+			driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
+			driver.findElement(By.xpath("//input[@id='loginbutton']")).click();
+			Alert alt = driver.switchTo().alert();
+			String msg = alt.getText();
+			System.out.println(msg);
 
 
 
@@ -16,5 +26,3 @@ public class FirstOne {
 		}
 
 	}
-
-}
