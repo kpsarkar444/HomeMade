@@ -19,7 +19,7 @@ public class FirstOne {
 			String msg = alt.getText();
 			System.out.println(msg);
 
-			driver.manage().timeouts().implecitelyWait(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(20, TimesUnit.SECONDS);
 
 		
 		
