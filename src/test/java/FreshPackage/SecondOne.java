@@ -52,6 +52,7 @@ public class SecondOne {
 			
 			e1.click();
 			System.out.println(e1.isSelected());
+			System.out.println();
 			break;
 			
 		}
